@@ -8,7 +8,7 @@ wp:
     repository: wordpress
     tag: latest
     pullPolicy: Always
-  replicas: 1
+  replicas: 5
   configmap:
     WORDPRESS_DB_HOST: "wp-database.db.svc.cluster.local"
     WORDPRESS_DB_NAME: "wordpress"
