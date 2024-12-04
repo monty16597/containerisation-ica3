@@ -1,0 +1,13 @@
+wp:
+  name: wpapp
+  labels:
+    id: c0912251
+    app: proxy
+    env: dev
+  image:
+    repository: manjeetsinhalonja/proxy
+    tag: latest
+    pullPolicy: Always
+  replicas: 1
+  containerPorts:
+      http: 80
